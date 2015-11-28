@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="google-site-verification" content="{{ .Site.Data.site.googleSiteVerificationCode }}"/>
+    {{ if .RSSlink }}
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
+    <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
+    {{ end }}
+    <meta name="keywords" content="Cedric Ziel">
+    <link rel="canonical" href="https://blog.cedric-ziel.com/"/>
+
+    <title>Cedric Ziel - Bloggy thoughts of @cedricziel - Cedric Ziel</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono|Share:400,400italic,700,700italic'
+          rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header role="masthead">
+    <div class="row">
+        <div class="small-4 columns align-left hide-for-small">
+            <nav class="leftNav">
+                <ul class="inline-list">
+                    <li><a href="/about/" rel="author">About</a></li>
+                    <li><a href="/articles/">Blog</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="small-4 columns align-center logo-container">
+            <a href="/" title="Cedric Ziel">
+                Cedric Ziel
+            </a>
+        </div>
+        <div class="small-4 columns align-right nav hide-for-small align-right">
+            <nav class="rightNav align-right">
+                <ul class="inline-list" style="display: block;">
+                    <li><a href="https://github.com/cedricziel" target="_blank">GitHub</a></li>
+                    <li><a href="/feed.xml">RSS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="small-4 column align-right show-for-small responsive-nav">
+            <div id="responsiveNavButton" class="responsive-nav-btn"></div>
+            <div class="caret caret-up"></div>
+        </div>
+    </div>
+    <div id="responsive-nav-list" class="row dark-nav">
+        <div id="responsive-nav-container" class="small-12 columns">
+            <ul class="">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/articles/">Blog</a></li>
+
+                <li><a href="https://www.xing.com/profiles/Cedric_Ziel" target="_blank">Xing</a></li>
+                <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+        </div>
+    </div>
+    <a href="https://github.com/cedricziel" class="hide-for-small">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="/images/forkme.656c23f7.cache.png"
+             alt="Fork me on GitHub">
+    </a>
+</header>
+<div class="row">
+    <div class="twelve columns">
+        <ul>
+            {{ range .Data.Pages }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="large-10 small-8 columns">
+            <b>&copy; 2015 Cedric Ziel</b> <a href="/impress/">Impress // Impressum</a>
+        </div>
+        <div class="large-2 small-4 columns align-right">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
