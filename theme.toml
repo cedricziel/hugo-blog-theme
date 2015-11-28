@@ -3,16 +3,16 @@
 
 name = "Cedricziel"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/cedricziel/hugo-blog-theme/blob/master/LICENSE.md"
 description = ""
-homepage = "http://siteforthistheme.com/"
+homepage = "https://github.com/cedricziel/hugo-blog-theme"
 tags = ["", ""]
 features = ["", ""]
 min_version = 0.14
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Cedric Ziel"
+  homepage = "https://blog.cedric-ziel.com"
 
 # If porting an existing theme
 [original]
